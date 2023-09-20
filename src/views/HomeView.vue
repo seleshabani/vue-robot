@@ -3,8 +3,9 @@
     <div class="items">
       <RouterLink :to="{ name: 'discover', params: { id: user.id }}" class="card" v-for="(user,index) in users" :key="index">
         <div class="img">
-          <img src="https://robohash.org/{{ user.id }}" alt="">
+          <img :src="`https://robohash.org/${user.id}`"  alt="">
         </div>
+
         <div class="content">
           <p>nom: {{ user.name }}</p>
         </div>

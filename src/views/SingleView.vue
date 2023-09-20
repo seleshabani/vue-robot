@@ -2,7 +2,7 @@
     <div id="page-single">
         <div class="content">
             <div class="img">
-                <img src="https://robohash.org/{{ user.id }}" alt="">
+                <img :src="`https://robohash.org/${user.id}`"/>
             </div>
             <h2>{{ user.name }}</h2>
         </div>
